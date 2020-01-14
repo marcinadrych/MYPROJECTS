@@ -1,0 +1,1 @@
+Wyżej znajdziemy program który posiada w swojej bazie kilka piosenek które poprzez naciśnięcie możemy odsłuchac. Jeżeli chcemy przejść do kolejnej, pierwszą trzeba zatrzymać :)
