@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script>
+	
+    function fetchData() {
+        fetch('http://localhost:5000/')
+            .then(response => response.json())
+            .then(data => { 
+                console.log(data);
+
+                id = JSON.stringify(data.id)
+                writer = JSON.stringify(data.writer)
+                essence = JSON.stringify(data.essence)
+                responsesIds = JSON.stringify(data.responsesIds) 
+
+                document.getElementById('id').innerHTML = id;
+                document.getElementById('writer').innerHTML = writer;
+                document.getElementById('essence').innerHTML = essence;
+                document.getElementById('responses').innerHTML = responsesIds;
+            })
+            .catch((err) => console.log('Error: ' + err))
+    }
+    </script>
+</head>
+<body>
+    <button onclick="fetchData()">clickMeee</button>
+    <div id="id"></div>
+    <div id="writer"></div>
+    <div id="essence"></div>
+    <div id="responses"></div>
+</body>
+</html>
