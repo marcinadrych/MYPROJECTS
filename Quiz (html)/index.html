@@ -1,0 +1,80 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="description" content="QUIZ">
+	<link rel="stylesheet" href="css/style.css" type="text/css">
+	<title>MATEMATYKA QUIZ</title>
+</head>
+<body>
+	<div class="container">
+		<header>
+			<div class="pull-left">MATEMATYKA SZKOŁA PODSTAWOWA QUIZ</div>
+			<div class="pull-right"></div>
+		</header>
+		<main>
+			<form class="questionForm" id="p1" data-question="1">
+				<h3>1. Ile wynosi pole kwadratu o boku 1,5cm ? </h3>
+				<ul>
+					<li><input type="radio" name="p1" value="a" /> 1,25cm2 </li>
+					<li><input type="radio" name="p1" value="b" /> 1,75cm2 </li>
+					<li><input type="radio" name="p1" value="c" /> 2,25cm2 </li>
+					<li><input type="radio" name="p1" value="d" /> 3,5cm2 </li>
+				</ul>	
+				<button id="submit">Zatwierdź</button>
+			</form>
+			
+			<form class="questionForm" id="p2" data-question="2">
+				<h3>2. Podaj wynik działania: 7*77 = </h3>
+				<ul>
+					<li><input type="radio" name="p2" value="a" /> 495 </li>
+					<li><input type="radio" name="p2" value="b" /> 539 </li>
+					<li><input type="radio" name="p2" value="c" /> 620 </li>
+					<li><input type="radio" name="p2" value="d" /> 449 </li>
+				</ul>	
+				<button id="submit">Zatwierdź</button>
+			</form>			
+			
+			<form class="questionForm" id="p3" data-question="3">
+				<h3>3. Podaj wynik działania: 2+2+4*4 = </h3>
+				<ul>
+					<li><input type="radio" name="p3" value="a" /> 20 </li>
+					<li><input type="radio" name="p3" value="b" /> 32 </li>
+					<li><input type="radio" name="p3" value="c" /> 28 </li>
+					<li><input type="radio" name="p3" value="d" /> 36 </li>
+				</ul>	
+				<button id="submit">Zatwierdź</button>
+			</form>
+			
+			<form class="questionForm" id="p4" data-question="4">
+				<h3>4. 3 do sześcianu to ? </h3>
+				<ul>
+					<li><input type="radio" name="p4" value="a" /> 12 </li>
+					<li><input type="radio" name="p4" value="b" /> 27 </li>
+					<li><input type="radio" name="p4" value="c" /> 15 </li>
+					<li><input type="radio" name="p4" value="d" /> 18 </li>
+				</ul>	
+				<button id="submit">Zatwierdź</button>
+			</form>
+			
+			<form class="questionForm" id="p5" data-question="5">
+				<h3>5. Który z poniższych to wzór na pole kwadratu? </h3>
+				<ul>
+					<li><input type="radio" name="p5" value="a" /> P=a*a </li>
+					<li><input type="radio" name="p5" value="b" /> P=a+a </li>
+					<li><input type="radio" name="p5" value="c" /> P=4a </li>
+					<li><input type="radio" name="p5" value="d" /> P=a+a+a+a </li>
+				</ul>	
+				<button id="submit">Zatwierdź</button>
+			</form>
+			
+			<div id="results"></div>
+		</main>
+		<footer>
+			<div class="pull-left">Baza pytań: 5</div>
+		</footer>
+	</div>
+	<script src="js/jquery.js"></script>
+	<script src="js/quiz.js"></script>
+</body>
+</html>
