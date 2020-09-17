@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="pl">
+<head>
+	<meta charset="utf-8" />
+	<title>tabela</title>
+	<link rel="stylesheet" type="text/css" media="screen" href="style.css"/>
+</head>
+<body>
+	<table id="table">
+	<caption>Zarobki</caption>
+		<thead>
+            <tr>
+                <th onclick="sortTable(0)">Nazwisko i imie</th>
+                <th onclick="sortTable(1)">Płeć</th>
+				<th onclick="sortTable(2)">Zarobki</th>
+				<th onclick="sortTable(3)">Wiek</th>
+                <th onclick="sortTable(4)">Firma</th>
+                <td onclick="sredniaZar();"id="sredniaZarobkow">Średnia zarobków(nacisnij)</td>
+                <td onclick="sredniaWiek();"id="sredniaWiek">Średnia wiek(nacisnij)</td>
+			</tr>
+		</thead>
+		<tbody id="liczby">
+            <tr>
+				<td>Zajączkowska Marta</td>
+				<td>Kobieta</td>
+				<td>3500</td>
+				<td>35</td>
+                <td>BookingAGER</td>	
+			<tr>
+				<td>Adrych Marcin</td>
+				<td>Mężczyzna</td>
+				<td>2500</td>
+				<td>25</td>	
+				<td>MooperCompany</td>
+			</tr>
+			<tr>
+				<td>Zajk Ola</td>
+				<td>Kobieta</td>
+				<td>2560</td>
+				<td>25</td>
+				<td>KejshaBooking</td>
+			</tr>
+            <tr>
+				<td>Kowalski Adam</td>
+				<td>Mężczyzna</td>
+				<td>2950</td>
+				<td>29</td>	
+				<td>ZabkaExpress</td>
+			</tr>
+            <tr>
+				<td>Cygański Filip</td>
+				<td>Mężczyzna</td>
+				<td>3570</td>
+				<td>28</td>	
+				<td>Microsoft</td>
+			</tr>
+		</tbody>
+	</table>
+    <tfoot>
+        <br>
+        <h4>Nazwisko i Imie: <input type="text" name="person" id="person" /><br/><br/>
+        Płeć<input type="text" name="lname" id="lname" /><br/><br/>
+        Zarobki: <input type="text" name="price" id="price" /><br/><br/>
+        Wiek: <input type="text" name="age" id="age" /><br/><br/>
+        Firma: <input type="text" name="company" id="company" /><br/><br/>
+        <button type="button" id="updateButton" class="button" onclick="addRow();">DODAJ</button></h4>
+    </tfoot>
+	<script src="sort.js"></script>
+    <script src="skrypt.js"></script>	
+</body>
+</html>
