@@ -1,8 +1,0 @@
-Projekt backendu zrobiony za pomocą django.
-
--stworzyłem mini forum gdzie wyswietla sie nazwa strony w przegladarce na otwartej karcie
--dwie inne strony takie jak HOME i ABOUT
--Tworzenie, usuwanie, edytowanie postów
--Wyświetlana data dodanego postu i który użytkowanik wstawił post.
--możliwość tworzenia kont poprzez rejestracje i usuwanie kont
--opcja PROFIL gdzie wyświetlana jest nazwa profilu, zdjęcie (które również można zmienic) i email na który był rejestrowany dany profil
